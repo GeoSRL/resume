@@ -1,0 +1,23 @@
+<div class="no-bold legend">
+	Login
+</div>
+
+<%= form_for :user, :url => users_login_path, :class => "form-horizontal" do |f| %>
+	
+	<div class="controls-group">
+		<div class="controls-label"><%= f.label :Email %></div>
+		<div class="controls">
+			<%= f.text_field :email, :placeholder => "Email" %>
+		</div>
+	</div>
+
+	<div class="controls-group">
+		<div class="controls-label"><%= f.label :Password %></div>
+		<div class="controls">
+			<%= f.password_field :password, :placeholder => "Password" %>
+		</div>
+	</div>
+
+	<%= f.submit :Login %>
+
+<% end -%>

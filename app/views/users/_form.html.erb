@@ -1,0 +1,35 @@
+<%= form_for @users, :class => "form-horizontal" do |f| %>
+
+	<ul>
+		<% if @users.errors.any? %>
+			<%= content_tag :div, "#{@users.errors.count} errors found", :class => "alert alert-warning" %>
+			<% @users.errors.full_messages.each do |e| %>
+				<%= content_tag :li, e %>
+			<% end -%>
+		<% end -%>
+	</ul>
+
+	<div class="controls-group">
+		<div class="controls-label"><%= f.label :Email %></div>
+		<div class="controls">
+			<%= f.text_field :email,  :placeholder => "Email" %>
+		</div>
+	</div>
+
+	<div class="controls-group">
+	<div class="controls-label"><%= f.label :Password %></div>
+		<div class="controls">
+			<%= f.password_field :password, :placeholder => "Password" %>
+		</div>
+	</div>
+
+	<div class="controls-group">
+	<div class="controls-label"><%= f.label :Confirm_Password %></div>
+		<div class="controls">
+			<%= f.password_field :password_confirmation, :placeholder => "Confirm Password" %>
+		</div>
+	</div>
+
+	<%= f.submit :Register %>
+
+<% end -%>

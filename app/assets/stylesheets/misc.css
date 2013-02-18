@@ -1,0 +1,58 @@
+/* 
+    Document   : style
+    Created on : Aug 12, 2012, 9:00:50 PM
+    Author     : Daniel
+    Description:
+        Bootstrap helper
+*/
+
+/* 
+   @TODO:
+*/
+
+.pre_fluid {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 30px;
+    color: #333;
+}
+
+.center_box {
+    margin: 0pt auto;
+}
+.carriage_icon { 
+    text-align: center;
+    float: left;
+    padding: 20px 3px;
+    margin: 0 1px 5px 3px;
+    width: 32px; 
+    height: 0px;
+    border: 1px solid #333;
+}
+.subnav { 
+    padding-top: 50px;
+}
+.center {
+    text-align: center;
+}
+.fill-container {
+    width: 98%;
+    padding: 1%;
+}
+.no-bold {
+    font-weight: 100;
+}
+.legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 51px;
+  color: #363636;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.block {
+  display: block;
+}

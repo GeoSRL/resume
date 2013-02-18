@@ -1,0 +1,47 @@
+	<%= content_tag :div, :class => "pull-right span5" do %>
+		<%= image_tag 'profile_pic.png', :class => 'img img-rounded' %>
+	<% end -%>
+
+	<%= content_tag :h1, "Daniel Cowman", :class => "center legend no-bold" %>
+
+	<%= content_tag :div, :class => "offset1", :style => "padding-bottom: 10px;" do %>
+
+		<%= content_tag :div do %>
+			Currently seeking employment to advance my knowledge within IT and Networking
+		<% end -%>
+
+		<%= content_tag :div do %>
+		<%= content_tag :h3, "Skills" %>
+			<%= content_tag :ul do %>
+				<%= content_tag :li, "Experience with Ruby on Rails, Ruby, PASCAL, PHP." %>
+				<%= content_tag :li, "Experience with the Linux CLI" %>
+				<%= content_tag :li, "Experience with Linux & Windows XP, 7 OS'" %>
+				<%= content_tag :li, "Knowledge of Computer Hardware" %>
+			<% end -%>
+		<% end -%>
+
+		<%= content_tag :div do %>
+		<%= content_tag :h3, "Current Projects" %>
+			<%= content_tag :ul do %>
+				<%= content_tag :li, "WarehouseApp | #{link_to :Github, "http://github.com/GeoSRL/wh"} |
+				                                     #{link_to :Website, "http://warehouseapp.net/"}".html_safe %>
+				<%= content_tag :li, "Republic: Awareness and Activism | #{link_to :Github, "http://github.com/GeoSRL/raa"} |
+				                                                     #{link_to :Website, "http://beta.dgc.io/"}".html_safe %>
+			<% end -%>
+		<% end -%>
+
+		<%= content_tag :div do %>
+		<%= content_tag :h3, "Education" %>
+			<%= content_tag :ul do %>
+				<%= content_tag :li, "<b>Graduated: Oct 2010</b> - Chancery Charter High".html_safe %>
+			<% end -%>
+		<% end -%>
+
+		<%= content_tag :div do %>
+		<%= content_tag :h3, "Work History" %>
+			<%= content_tag :ul do %>
+				<%= content_tag :li, "<b>Apr 2012 to Present</b> - Warehouse Associate at Acorn Stairlifts".html_safe %>
+			<% end -%>
+		<% end -%>
+
+  <% end -%>
